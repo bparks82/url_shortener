@@ -1,0 +1,8 @@
+NAME     HTTP   REQUEST PATH			 CONTROLLER#ACTION
+urls     GET    /urls(.:format)          urls#index
+         POST   /urls(.:format)          urls#create
+new_url  GET    /urls/new(.:format)      urls#new
+edit_url GET    /urls/:id/edit(.:format) urls#edit
+url      GET    /urls/:id(.:format)      urls#show
+         PUT    /urls/:id(.:format)      urls#update
+         DELETE /urls/:id(.:format)      urls#destroy

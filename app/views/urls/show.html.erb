@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Full url:</b>
+  <%= @url.full_url %>
+</p>
+
+<p>
+  <b>Short url:</b>
+  <%= short_url_with_host(@url) %>
+</p>
+
+
+<%= link_to 'Edit', edit_url_path(@url) %> |
+<%= link_to 'Back', urls_path %>
